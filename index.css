@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+:root {
+    /* Primary */
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 2rem 1rem;
+}
+
+.product {
+    background-color: var(--white);
+    max-width: 45rem;
+    border-radius: 10px;
+}
+
+.product__image {
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+}
+
+.product__details {
+    padding: 1.5rem;
+}
+
+.product__category {
+    padding-block-end: 1rem;
+    text-transform: uppercase;
+    color: var(--dark-grayish-blue);
+    letter-spacing: 0.5ch;
+}
+
+.product__title {
+    padding-block-end: 1rem;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2rem;
+}
+
+.product__description {
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+}
+
+.product__pricing {
+    padding-block-start: 1.25rem;
+}
+
+.product__price--discounted {
+    display: inline;
+    color: var(--dark-cyan);
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.product__price--normal {
+    text-decoration: line-through;
+    padding-inline-start: 1rem;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+}
+
+.product__cart {
+    display: block;
+    width: 100%;
+    margin-block-start: 1rem;
+    background-color: var(--dark-cyan);
+    border-radius: 10px;
+    padding: 1rem;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+}
